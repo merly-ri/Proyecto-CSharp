@@ -1,11 +1,10 @@
 using System;
 
-// Clase que implementa una lista enlazada simple
 namespace Tarea_Listas_Enlazadas
 {
     public class ListaEnlazada
     {
-        private Nodo cabeza; // Primer nodo de la lista
+        private Nodo? cabeza; // Primer nodo de la lista (puede estar vacío)
 
         // Constructor de la lista
         public ListaEnlazada()
@@ -13,8 +12,8 @@ namespace Tarea_Listas_Enlazadas
             cabeza = null;
         }
 
-        // Método para insertar un elemento al final de la lista
-        public void Insertar(int dato)
+        // Método para agregar un elemento al final de la lista
+        public void Agregar(int dato)
         {
             Nodo nuevo = new Nodo(dato);
 
@@ -33,12 +32,11 @@ namespace Tarea_Listas_Enlazadas
             }
         }
 
-        // EJERCICIO 1:
-        // Método que cuenta el número de elementos de la lista enlazada
+        // Método que cuenta el número de elementos de la lista
         public int ContarElementos()
         {
             int contador = 0;
-            Nodo actual = cabeza;
+            Nodo? actual = cabeza;
 
             while (actual != null)
             {
@@ -49,29 +47,28 @@ namespace Tarea_Listas_Enlazadas
             return contador;
         }
 
-        // EJERCICIO 2:
-        // Método que invierte el orden de los nodos de la lista enlazada
+        // Método que invierte el orden de los nodos de la lista
         public void InvertirLista()
         {
-            Nodo anterior = null;
-            Nodo actual = cabeza;
-            Nodo siguiente;
+            Nodo? anterior = null;
+            Nodo? actual = cabeza;
+            Nodo? siguiente;
 
             while (actual != null)
             {
-                siguiente = actual.Siguiente; // Guarda el siguiente nodo
-                actual.Siguiente = anterior;  // Invierte el enlace
-                anterior = actual;             // Avanza el nodo anterior
-                actual = siguiente;            // Avanza al siguiente nodo
+                siguiente = actual.Siguiente; // guarda el siguiente nodo
+                actual.Siguiente = anterior;  // invierte el enlace
+                anterior = actual;            // avanza el nodo anterior
+                actual = siguiente;           // avanza al siguiente nodo
             }
 
-            cabeza = anterior; // Nueva cabeza de la lista
+            cabeza = anterior; // nueva cabeza de la lista
         }
 
         // Método para mostrar los elementos de la lista
         public void Mostrar()
         {
-            Nodo actual = cabeza;
+            Nodo? actual = cabeza;
             while (actual != null)
             {
                 Console.Write(actual.Dato + " -> ");
@@ -81,3 +78,4 @@ namespace Tarea_Listas_Enlazadas
         }
     }
 }
+

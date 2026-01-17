@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Tarea_Listas_Enlazadas/1.0.0": {
+        "runtime": {
+          "Tarea_Listas_Enlazadas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Tarea_Listas_Enlazadas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -4,7 +4,7 @@ namespace Tarea_Listas_Enlazadas
     public class Nodo
     {
         public int Dato;          // Valor almacenado en el nodo
-        public Nodo Siguiente;    // Referencia al siguiente nodo
+        public Nodo? Siguiente;   // Referencia al siguiente nodo (puede ser null)
 
         // Constructor del nodo
         public Nodo(int dato)
@@ -14,3 +14,4 @@ namespace Tarea_Listas_Enlazadas
         }
     }
 }
+
