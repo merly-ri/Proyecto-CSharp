@@ -1,0 +1,15 @@
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\obj\Debug\net10.0\ProyectoCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\obj\Debug\net10.0\ProyectoCSharp.AssemblyInfoInputs.cache
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\obj\Debug\net10.0\ProyectoCSharp.AssemblyInfo.cs
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\obj\Debug\net10.0\ProyectoCSharp.csproj.CoreCompileInputs.cache
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\obj\Debug\net10.0\ProyectoCSharp.sourcelink.json
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\bin\Debug\net10.0\ProyectoCSharp.exe
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\bin\Debug\net10.0\ProyectoCSharp.deps.json
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\bin\Debug\net10.0\ProyectoCSharp.runtimeconfig.json
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\bin\Debug\net10.0\ProyectoCSharp.dll
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\bin\Debug\net10.0\ProyectoCSharp.pdb
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\obj\Debug\net10.0\ProyectoCSharp.dll
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\obj\Debug\net10.0\refint\ProyectoCSharp.dll
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\obj\Debug\net10.0\ProyectoCSharp.pdb
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\obj\Debug\net10.0\ProyectoCSharp.genruntimeconfig.cache
+C:\Users\michelle\.vscode\Proyecto-CSharp\ProyectoCSharp\obj\Debug\net10.0\ref\ProyectoCSharp.dll

@@ -1,61 +1,54 @@
 using System;
 using System.Collections.Generic;
 
-// Clase que verifica si una expresión tiene paréntesis balanceados
-public class Balanceador
+namespace Ejercicio1_Balanceo
 {
-    // Método que se ejecuta desde el menú principal
-    public static void Ejecutar()
+    // Clase que verifica si una expresión tiene paréntesis balanceados
+    public class Balanceador
     {
-        Console.Write("Ingrese una expresión: ");
-        string expresion = Console.ReadLine();
-
-        // Verifica si la expresión está balanceada
-        if (EstaBalanceada(expresion))
-            Console.WriteLine("Fórmula balanceada.");
-        else
-            Console.WriteLine("Fórmula NO balanceada.");
-    }
-
-    // Método que valida el balanceo usando una pila
-    static bool EstaBalanceada(string exp)
-    {
-        // Pila para almacenar los símbolos de apertura
-        Stack<char> pila = new Stack<char>();
-
-        // Recorrer cada carácter de la expresión
-        foreach (char c in exp)
+        // Método que se ejecuta desde el menú principal
+        public static void Ejecutar()
         {
-            // Si es un símbolo de apertura, se apila
-            if (c == '(' || c == '{' || c == '[')
-            {
-                pila.Push(c);
-            }
-            // Si es un símbolo de cierre
-            else if (c == ')' || c == '}' || c == ']')
-            {
-                // Si la pila está vacía, no está balanceada
-                if (pila.Count == 0)
-                    return false;
+            Console.Write("Ingrese una expresión: ");
+            string expresion = Console.ReadLine();
 
-                // Se desapila el último símbolo
-                char tope = pila.Pop();
-
-                // Se verifica si corresponde al tipo correcto
-                if (!EsPar(tope, c))
-                    return false;
-            }
+            if (EstaBalanceada(expresion))
+                Console.WriteLine("Fórmula balanceada.");
+            else
+                Console.WriteLine("Fórmula NO balanceada.");
         }
 
-        // Si la pila está vacía al final, está balanceada
-        return pila.Count == 0;
-    }
+        // Método que valida el balanceo usando una pila
+        static bool EstaBalanceada(string exp)
+        {
+            Stack<char> pila = new Stack<char>();
 
-    // Método que valida si los símbolos coinciden
-    static bool EsPar(char apertura, char cierre)
-    {
-        return (apertura == '(' && cierre == ')') ||
-               (apertura == '{' && cierre == '}') ||
-               (apertura == '[' && cierre == ']');
+            foreach (char c in exp)
+            {
+                if (c == '(' || c == '{' || c == '[')
+                {
+                    pila.Push(c);
+                }
+                else if (c == ')' || c == '}' || c == ']')
+                {
+                    if (pila.Count == 0)
+                        return false;
+
+                    char tope = pila.Pop();
+
+                    if (!EsPar(tope, c))
+                        return false;
+                }
+            }
+
+            return pila.Count == 0;
+        }
+
+        static bool EsPar(char apertura, char cierre)
+        {
+            return (apertura == '(' && cierre == ')') ||
+                   (apertura == '{' && cierre == '}') ||
+                   (apertura == '[' && cierre == ']');
+        }
     }
 }
