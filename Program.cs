@@ -13,4 +13,3 @@ class Program
         Ejercicio5.Ejecutar();
     }
 }
-
